@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Masoko: Shop onlike in kenya and pay conviniently via M-pesa</description>
+      <initValue>'https://www.masoko.com/'</initValue>
+      <name>masoko</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
