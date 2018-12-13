@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>verify an item is checked out from the cart</description>
+   <name>TC- Checkout an item</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1a190aa-32ee-48b5-93a6-0d007fbffc14</testCaseGuid>
+</TestCaseEntity>
