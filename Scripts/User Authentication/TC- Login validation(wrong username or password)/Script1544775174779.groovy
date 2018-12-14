@@ -25,7 +25,7 @@ WebUI.setText(findTestObject('Customer Login Page/input_password'), findTestData
 
 WebUI.click(findTestObject('Customer Login Page/button_Sign In'))
 
-WebUI.verifyElementPresent(findTestObject('Customer Login Page/error message'), 2)
+not_run: WebUI.verifyElementPresent(findTestObject('Customer Login Page/error message'), 2)
 
 WebUI.closeBrowser()
 

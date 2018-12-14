@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS-User auth (negative scenarios)" time="226" tests="3" failures="0" errors="0">
+   <testsuite name="TS-User auth (negative scenarios)" tests="3" failures="0" errors="0" time="226" timestamp="2018-12-14 14:59:40" hostname="C810896 - 36779SBKITD152L.ke.sbicdirectory.com" id="Test Suites/User Authentication/TS-User auth (negative scenarios)">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\c810896\\Katalon Studio\\Masoko Automation\\Reports\\User Authentication\\TS-User auth (negative scenarios)\\20181214_145937"/>
+         <property name="logFiles" value="C:\\Users\\c810896\\Katalon Studio\\Masoko Automation\\Reports\\User Authentication\\TS-User auth (negative scenarios)\\20181214_145937\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="C810896 - 36779SBKITD152L.ke.sbicdirectory.com"/>
+         <property name="os" value="Windows 7 32bit"/>
+         <property name="katalonVersion" value="5.9.1.2"/>
+         <property name="browser" value="Chrome 71.0.3578.98"/>
+         <property name="hostAddress" value="192.168.43.91"/>
+         <property name="sessionId" value="95399c3e4b33fb5b08ca51c124ed7607"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/User Authentication/TC-Customer registration validation(phone is reuqired)" classname="Test Cases/User Authentication/TC-Customer registration validation(phone is reuqired)" status="PASSED">
+         <system-out><![CDATA[2018-12-14 14:59:40 - [TEST_CASE][PASSED] - Test Cases/User Authentication/TC-Customer registration validation(phone is reuqired): Test Cases/User Authentication/TC-Customer registration validation(phone is reuqired)
+
+2018-12-14 14:59:41 - [TEST_STEP][PASSED] - openBrowser(masoko): Browser is opened with url: 'https://www.masoko.com/'
+
+2018-12-14 14:59:42 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2018-12-14 14:59:42 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2018-12-14 15:00:57 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.masoko.com/'
+
+2018-12-14 15:00:57 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Register")): Object: 'Object Repository/Home Page/Register' is clicked on
+
+2018-12-14 15:01:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Register' is clicked on
+
+2018-12-14 15:01:05 - [TEST_STEP][PASSED] - setText(findTestObject("Create New Customer Account Page/input_firstname"), findTestData("Masoko data/TD -Masoko registration").getValue(1, 1)): Text 'maris' is set on object 'Object Repository/Create New Customer Account Page/input_firstname'
+
+2018-12-14 15:01:06 - [MESSAGE][PASSED] - Text 'maris' is set on object 'Object Repository/Create New Customer Account Page/input_firstname'
+
+2018-12-14 15:01:06 - [TEST_STEP][PASSED] - setText(findTestObject("Create New Customer Account Page/input_lastname"), findTestData("Masoko data/TD -Masoko registration").getValue(2, 1)): Text 'kaugi' is set on object 'Object Repository/Create New Customer Account Page/input_lastname'
+
+2018-12-14 15:01:06 - [MESSAGE][PASSED] - Text 'kaugi' is set on object 'Object Repository/Create New Customer Account Page/input_lastname'
+
+2018-12-14 15:01:06 - [TEST_STEP][PASSED] - setText(findTestObject("Create New Customer Account Page/input_mobile"), ""): Text '' is set on object 'Object Repository/Create New Customer Account Page/input_mobile'
+
+2018-12-14 15:01:06 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Create New Customer Account Page/input_mobile'
+
+2018-12-14 15:01:06 - [TEST_STEP][PASSED] - setText(findTestObject("Create New Customer Account Page/input_email"), findTestData("Masoko data/TD -Masoko registration").getValue(4, 1)): Text '715560738' is set on object 'Object Repository/Create New Customer Account Page/input_email'
+
+2018-12-14 15:01:07 - [MESSAGE][PASSED] - Text '715560738' is set on object 'Object Repository/Create New Customer Account Page/input_email'
+
+2018-12-14 15:01:07 - [TEST_STEP][PASSED] - setText(findTestObject("Create New Customer Account Page/input_password"), findTestData("Masoko data/TD -Masoko registration").getValue(5, 1)): Text 'Kenya@123' is set on object 'Object Repository/Create New Customer Account Page/input_password'
+
+2018-12-14 15:01:07 - [MESSAGE][PASSED] - Text 'Kenya@123' is set on object 'Object Repository/Create New Customer Account Page/input_password'
+
+2018-12-14 15:01:07 - [TEST_STEP][PASSED] - setText(findTestObject("Create New Customer Account Page/input_password_confirmation"), findTestData("Masoko data/TD -Masoko registration").getValue(6, 1)): Text 'Kenya@123' is set on object 'Object Repository/Create New Customer Account Page/input_password_confirmation'
+
+2018-12-14 15:01:07 - [MESSAGE][PASSED] - Text 'Kenya@123' is set on object 'Object Repository/Create New Customer Account Page/input_password_confirmation'
+
+2018-12-14 15:01:07 - [TEST_STEP][PASSED] - click(findTestObject("Create New Customer Account Page/button_Create an Account")): Object: 'Object Repository/Create New Customer Account Page/button_Create an Account' is clicked on
+
+2018-12-14 15:01:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Create New Customer Account Page/button_Create an Account' is clicked on
+
+2018-12-14 15:01:08 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Create New Customer Account Page/empty_phone_field error"), 2): Object 'Object Repository/Create New Customer Account Page/empty_phone_field error' is present
+
+2018-12-14 15:01:08 - [MESSAGE][PASSED] - Object 'Object Repository/Create New Customer Account Page/empty_phone_field error' is present
+
+2018-12-14 15:01:08 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2018-12-14 15:01:10 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User Authentication/TC- Login validation(wrong username or password)" classname="Test Cases/User Authentication/TC- Login validation(wrong username or password)" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:01:10 - [TEST_CASE][PASSED] - Test Cases/User Authentication/TC- Login validation(wrong username or password): Test Cases/User Authentication/TC- Login validation(wrong username or password)
+
+2018-12-14 15:01:10 - [TEST_STEP][PASSED] - openBrowser(masoko): Browser is opened with url: 'https://www.masoko.com/'
+
+2018-12-14 15:01:10 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2018-12-14 15:01:42 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.masoko.com/'
+
+2018-12-14 15:01:42 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Sign In ")): Object: 'Object Repository/Home Page/Sign In ' is clicked on
+
+2018-12-14 15:01:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Sign In ' is clicked on
+
+2018-12-14 15:01:49 - [TEST_STEP][PASSED] - setText(findTestObject("Customer Login Page/input_username"), findTestData("Masoko data/TD- Masoko login").getValue(1, 3)): Text 'stella.ireri@gmail.com' is set on object 'Object Repository/Customer Login Page/input_username'
+
+2018-12-14 15:01:50 - [MESSAGE][PASSED] - Text 'stella.ireri@gmail.com' is set on object 'Object Repository/Customer Login Page/input_username'
+
+2018-12-14 15:01:50 - [TEST_STEP][PASSED] - setText(findTestObject("Customer Login Page/input_password"), findTestData("Masoko data/TD- Masoko login").getValue(2, 3)): Text '12345678' is set on object 'Object Repository/Customer Login Page/input_password'
+
+2018-12-14 15:01:50 - [MESSAGE][PASSED] - Text '12345678' is set on object 'Object Repository/Customer Login Page/input_password'
+
+2018-12-14 15:01:50 - [TEST_STEP][PASSED] - click(findTestObject("Customer Login Page/button_Sign In")): Object: 'Object Repository/Customer Login Page/button_Sign In' is clicked on
+
+2018-12-14 15:02:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Customer Login Page/button_Sign In' is clicked on
+
+2018-12-14 15:02:07 - [TEST_STEP][NOT_RUN] - verifyElementPresent(findTestObject("Customer Login Page/error message"), 2): NOT_RUN: verifyElementPresent(findTestObject("Customer Login Page/error message"), 2)
+
+2018-12-14 15:02:07 - [MESSAGE][NOT_RUN] - NOT_RUN: verifyElementPresent(findTestObject("Customer Login Page/error message"), 2)
+
+2018-12-14 15:02:07 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2018-12-14 15:02:08 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/User Authentication/TC-Login validation(empty fields)" classname="Test Cases/User Authentication/TC-Login validation(empty fields)" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:02:08 - [TEST_CASE][PASSED] - Test Cases/User Authentication/TC-Login validation(empty fields): Test Cases/User Authentication/TC-Login validation(empty fields)
+
+2018-12-14 15:02:08 - [TEST_STEP][PASSED] - openBrowser(masoko): Browser is opened with url: 'https://www.masoko.com/'
+
+2018-12-14 15:02:08 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2018-12-14 15:03:05 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.masoko.com/'
+
+2018-12-14 15:03:05 - [TEST_STEP][PASSED] - click(findTestObject("Home Page/Sign In ")): Object: 'Object Repository/Home Page/Sign In ' is clicked on
+
+2018-12-14 15:03:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Home Page/Sign In ' is clicked on
+
+2018-12-14 15:03:20 - [TEST_STEP][PASSED] - setText(findTestObject("Customer Login Page/input_username"), findTestData("Masoko data/TD- Masoko login").getValue(1, 1)): Text 'stellaireri@gmail.com' is set on object 'Object Repository/Customer Login Page/input_username'
+
+2018-12-14 15:03:20 - [MESSAGE][PASSED] - Text 'stellaireri@gmail.com' is set on object 'Object Repository/Customer Login Page/input_username'
+
+2018-12-14 15:03:20 - [TEST_STEP][PASSED] - setText(findTestObject("Customer Login Page/input_password"), ""): Text '' is set on object 'Object Repository/Customer Login Page/input_password'
+
+2018-12-14 15:03:20 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Customer Login Page/input_password'
+
+2018-12-14 15:03:20 - [TEST_STEP][PASSED] - click(findTestObject("Customer Login Page/button_Sign In")): Object: 'Object Repository/Customer Login Page/button_Sign In' is clicked on
+
+2018-12-14 15:03:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Customer Login Page/button_Sign In' is clicked on
+
+2018-12-14 15:03:26 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Customer Login Page/empty_field error"), 0): Object 'Object Repository/Customer Login Page/empty_field error' is present
+
+2018-12-14 15:03:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2018-12-14 15:03:26 - [MESSAGE][PASSED] - Object 'Object Repository/Customer Login Page/empty_field error' is present
+
+2018-12-14 15:03:26 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2018-12-14 15:03:27 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-14 14:59:40 - [TEST_SUITE][PASSED] - TS-User auth (negative scenarios): Test Cases/User Authentication/TC-Login validation(empty fields)]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
