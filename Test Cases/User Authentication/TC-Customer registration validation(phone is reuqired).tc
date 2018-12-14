@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>verifying that a customer phone number is required during registration process in masoko.com</description>
+   <name>TC-Customer registration validation(phone is reuqired)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2887296-2b9b-42ff-93fd-52e391ca8bd4</testCaseGuid>
+</TestCaseEntity>

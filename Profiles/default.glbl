@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>Masoko: Shop onlike in kenya and pay conviniently via M-pesa</description>
-      <initValue>'https://www.masoko.com/'</initValue>
+      <initValue>findTestData('Masoko data/TD- Masoko url').getValue(1, 1)</initValue>
       <name>masoko</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

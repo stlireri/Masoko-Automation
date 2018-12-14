@@ -15,17 +15,17 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.masoko)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Home Page/Sign In '))
 
-WebUI.setText(findTestObject('Home Page/search bar'), findTestData('Masoko data/TD- Product Search').getValue(1, 1))
+WebUI.setText(findTestObject('Customer Login Page/input_username'), findTestData('Masoko data/TD- Masoko login').getValue(
+        1, 3))
 
-WebUI.click(findTestObject('Home Page/button_Search'))
+WebUI.setText(findTestObject('Customer Login Page/input_password'), findTestData('Masoko data/TD- Masoko login').getValue(
+        2, 3))
 
-WebUI.click(findTestObject('Product search page/img_product_1'))
+WebUI.click(findTestObject('Customer Login Page/button_Sign In'))
 
-WebUI.click(findTestObject('Product search page/button_Add to Cart'))
-
-WebUI.delay(2)
+WebUI.verifyElementPresent(findTestObject('Customer Login Page/error message'), 2)
 
 WebUI.closeBrowser()
 

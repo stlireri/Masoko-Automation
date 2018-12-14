@@ -17,7 +17,7 @@ WebUI.openBrowser(GlobalVariable.masoko)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Home Page/search bar'), 'Dell Mouse')
+WebUI.setText(findTestObject('Home Page/search bar'), findTestData('Masoko data/TD- Product Search').getValue(1, 1))
 
 WebUI.click(findTestObject('Home Page/button_Search'))
 

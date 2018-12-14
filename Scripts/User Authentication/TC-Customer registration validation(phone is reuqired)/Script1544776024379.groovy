@@ -23,8 +23,7 @@ WebUI.setText(findTestObject('Create New Customer Account Page/input_firstname')
 WebUI.setText(findTestObject('Create New Customer Account Page/input_lastname'), findTestData('Masoko data/TD -Masoko registration').getValue(
         2, 1))
 
-WebUI.setText(findTestObject('Create New Customer Account Page/input_mobile'), findTestData('Masoko data/TD -Masoko registration').getValue(
-        3, 1))
+WebUI.setText(findTestObject('Create New Customer Account Page/input_mobile'), '')
 
 WebUI.setText(findTestObject('Create New Customer Account Page/input_email'), findTestData('Masoko data/TD -Masoko registration').getValue(
         4, 1))
@@ -36,6 +35,8 @@ WebUI.setText(findTestObject('Create New Customer Account Page/input_password_co
         6, 1))
 
 WebUI.click(findTestObject('Create New Customer Account Page/button_Create an Account'))
+
+WebUI.verifyElementPresent(findTestObject('Create New Customer Account Page/empty_phone_field error'), 2)
 
 WebUI.closeBrowser()
 

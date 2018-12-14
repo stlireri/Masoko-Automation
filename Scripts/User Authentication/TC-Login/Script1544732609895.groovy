@@ -19,9 +19,11 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Home Page/Sign In '))
 
-WebUI.setText(findTestObject('Customer Login Page/input_username'), 'stellaireri@gmail.com')
+WebUI.setText(findTestObject('Customer Login Page/input_username'), findTestData('Masoko data/TD- Masoko login').getValue(
+        1, 1))
 
-WebUI.setText(findTestObject('Customer Login Page/input_password'), 'Maseno@123')
+WebUI.setText(findTestObject('Customer Login Page/input_password'), findTestData('Masoko data/TD- Masoko login').getValue(
+        2, 1))
 
 WebUI.click(findTestObject('Customer Login Page/button_Sign In'))
 

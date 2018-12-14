@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>testing for empty fields while logging in
+</description>
+   <name>TC-Login validation(empty fields)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d9fc8f83-a300-4d92-8dcd-41b8c55fd133</testCaseGuid>
+</TestCaseEntity>

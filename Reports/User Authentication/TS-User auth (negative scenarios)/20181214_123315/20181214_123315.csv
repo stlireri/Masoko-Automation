@@ -1,0 +1,33 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS-User auth (negative scenarios),Chrome 71.0.3578.98,execution of negative scenarios during user authentication process,2018-12-14 12:33:32,2018-12-14 12:38:23,4m - 50.589s,FAILED
+,,,,,,
+Test Cases/User Authentication/TC-Customer registration validation(phone is reuqired),Chrome 71.0.3578.98,verifying that a customer phone number is required during registration process in masoko.com,2018-12-14 12:33:33,2018-12-14 12:35:13,1m - 39.494s,PASSED
+openBrowser(masoko),Chrome 71.0.3578.98,,2018-12-14 12:33:34,2018-12-14 12:34:48,1m - 14.274s,PASSED
+"click(findTestObject(""Home Page/Register""))",Chrome 71.0.3578.98,,2018-12-14 12:34:48,2018-12-14 12:35:10,21.340s,PASSED
+"setText(findTestObject(""Create New Customer Account Page/input_firstname""), findTestData(""Masoko data/TD -Masoko registration"").getValue(1, 1))",Chrome 71.0.3578.98,,2018-12-14 12:35:10,2018-12-14 12:35:10,0.398s,PASSED
+"setText(findTestObject(""Create New Customer Account Page/input_lastname""), findTestData(""Masoko data/TD -Masoko registration"").getValue(2, 1))",Chrome 71.0.3578.98,,2018-12-14 12:35:10,2018-12-14 12:35:10,0.213s,PASSED
+"setText(findTestObject(""Create New Customer Account Page/input_mobile""), """")",Chrome 71.0.3578.98,,2018-12-14 12:35:10,2018-12-14 12:35:10,0.294s,PASSED
+"setText(findTestObject(""Create New Customer Account Page/input_email""), findTestData(""Masoko data/TD -Masoko registration"").getValue(4, 1))",Chrome 71.0.3578.98,,2018-12-14 12:35:10,2018-12-14 12:35:11,0.391s,PASSED
+"setText(findTestObject(""Create New Customer Account Page/input_password""), findTestData(""Masoko data/TD -Masoko registration"").getValue(5, 1))",Chrome 71.0.3578.98,,2018-12-14 12:35:11,2018-12-14 12:35:11,0.310s,PASSED
+"setText(findTestObject(""Create New Customer Account Page/input_password_confirmation""), findTestData(""Masoko data/TD -Masoko registration"").getValue(6, 1))",Chrome 71.0.3578.98,,2018-12-14 12:35:11,2018-12-14 12:35:11,0.214s,PASSED
+"click(findTestObject(""Create New Customer Account Page/button_Create an Account""))",Chrome 71.0.3578.98,,2018-12-14 12:35:11,2018-12-14 12:35:12,0.172s,PASSED
+"verifyElementPresent(findTestObject(""Create New Customer Account Page/empty_phone_field error""), 2)",Chrome 71.0.3578.98,,2018-12-14 12:35:12,2018-12-14 12:35:12,0.066s,PASSED
+closeBrowser(),Chrome 71.0.3578.98,,2018-12-14 12:35:12,2018-12-14 12:35:13,1.063s,PASSED
+,,,,,,
+Test Cases/User Authentication/TC- Login validation(wrong username or password),Chrome 71.0.3578.98,testing  for validation of user login using wrong email or pasword,2018-12-14 12:35:13,2018-12-14 12:37:10,1m - 56.869s,FAILED
+openBrowser(masoko),Chrome 71.0.3578.98,,2018-12-14 12:35:13,2018-12-14 12:36:00,46.632s,PASSED
+"click(findTestObject(""Home Page/Sign In ""))",Chrome 71.0.3578.98,,2018-12-14 12:36:00,2018-12-14 12:36:21,21.237s,PASSED
+"setText(findTestObject(""Customer Login Page/input_username""), findTestData(""Masoko data/TD- Masoko login"").getValue(1, 3))",Chrome 71.0.3578.98,,2018-12-14 12:36:21,2018-12-14 12:36:22,0.268s,PASSED
+"setText(findTestObject(""Customer Login Page/input_password""), findTestData(""Masoko data/TD- Masoko login"").getValue(2, 3))",Chrome 71.0.3578.98,,2018-12-14 12:36:22,2018-12-14 12:36:22,0.254s,PASSED
+"click(findTestObject(""Customer Login Page/button_Sign In""))",Chrome 71.0.3578.98,,2018-12-14 12:36:22,2018-12-14 12:37:07,45.142s,PASSED
+"verifyElementPresent(findTestObject(""Customer Login Page/error message""), 2)",Chrome 71.0.3578.98,,2018-12-14 12:37:07,2018-12-14 12:37:10,2.901s,FAILED
+,,,,,,
+Test Cases/User Authentication/TC-Login validation(empty fields),Chrome 71.0.3578.98,"testing for empty fields while logging in
+",2018-12-14 12:37:10,2018-12-14 12:38:23,1m - 12.688s,PASSED
+openBrowser(masoko),Chrome 71.0.3578.98,,2018-12-14 12:37:10,2018-12-14 12:38:00,49.559s,PASSED
+"click(findTestObject(""Home Page/Sign In ""))",Chrome 71.0.3578.98,,2018-12-14 12:38:00,2018-12-14 12:38:21,21.201s,PASSED
+"setText(findTestObject(""Customer Login Page/input_username""), findTestData(""Masoko data/TD- Masoko login"").getValue(1, 1))",Chrome 71.0.3578.98,,2018-12-14 12:38:21,2018-12-14 12:38:21,0.272s,PASSED
+"setText(findTestObject(""Customer Login Page/input_password""), """")",Chrome 71.0.3578.98,,2018-12-14 12:38:21,2018-12-14 12:38:21,0.134s,PASSED
+"click(findTestObject(""Customer Login Page/button_Sign In""))",Chrome 71.0.3578.98,,2018-12-14 12:38:21,2018-12-14 12:38:21,0.177s,PASSED
+"verifyElementPresent(findTestObject(""Customer Login Page/empty_field error""), 0)",Chrome 71.0.3578.98,,2018-12-14 12:38:21,2018-12-14 12:38:22,0.058s,PASSED
+closeBrowser(),Chrome 71.0.3578.98,,2018-12-14 12:38:22,2018-12-14 12:38:23,0.973s,PASSED
